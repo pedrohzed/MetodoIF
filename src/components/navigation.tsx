@@ -4,13 +4,14 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { signout } from '@/app/(auth)/actions'
-import { LayoutDashboard, BookOpen, PenLine, Target, LogOut } from 'lucide-react'
+import { LayoutDashboard, BookOpen, PenLine, Target, LogOut, Trophy } from 'lucide-react'
 
 const navItems = [
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/exercises', label: 'Exercícios', icon: BookOpen },
   { href: '/essay', label: 'Redação', icon: PenLine },
   { href: '/simulations', label: 'Simulados', icon: Target },
+  { href: '/leaderboard', label: 'Ranking', icon: Trophy },
 ]
 
 export function Sidebar() {
